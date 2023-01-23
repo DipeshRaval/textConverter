@@ -68,6 +68,20 @@ function Navbar(props) {
               props.toggleMode("warning");
             }}
           ></div>
+          {/* <div
+            style={{ height: "30px", width: "30px" }}
+            className="bg-light rounded mx-2"
+            onClick={() => {
+              props.toggleMode("light");
+            }}
+          ></div>
+          <div
+            style={{ height: "30px", width: "30px" }}
+            className="bg-dark rounded mx-2"
+            onClick={() => {
+              props.toggleMode("dark");
+            }}
+          ></div> */}
 
           <div
             className="form-check form-switch"
@@ -78,7 +92,7 @@ function Navbar(props) {
               type="checkbox"
               role="switch"
               onClick={() => {
-                props.toggleMode();
+                props.toggleMode(null);
               }}
               id="flexSwitchCheckDefault"
             />
